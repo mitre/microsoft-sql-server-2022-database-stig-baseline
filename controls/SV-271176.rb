@@ -28,6 +28,11 @@ Consider submitting a request to the vendor for changes to a COTS database when 
   tag gtitle: 'SRG-APP-000251-DB-000160'
   tag fix_id: 'F-75126r1109199_fix'
   tag 'documentable'
+  tag legacy: ['SV-81881', 'V-67391', 'SV-93801', 'V-79095']
   tag cci: ['CCI-001310']
   tag nist: ['SI-10']
+
+  describe 'Test has no automation procedure, checks must be performed manually' do
+    skip 'This check must be performed manually'
+  end
 end

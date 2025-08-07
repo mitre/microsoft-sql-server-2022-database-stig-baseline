@@ -32,6 +32,7 @@ Consider submitting a request to the vendor for changes to a COTS database when 
   tag gtitle: 'SRG-APP-000233-DB-000124'
   tag fix_id: 'F-75122r1109194_fix'
   tag 'documentable'
+  tag legacy: ['SV-93797', 'V-79091']
   tag cci: ['CCI-001084']
   tag nist: ['SC-3']
 end

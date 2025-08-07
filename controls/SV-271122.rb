@@ -48,6 +48,7 @@ ALTER DATABASE [<database name>] SET TRUSTWORTHY OFF;'
   tag gtitle: 'SRG-APP-000080-DB-000063'
   tag fix_id: 'F-75072r1109179_fix'
   tag 'documentable'
+  tag legacy: ['SV-93777', 'V-79071']
   tag cci: ['CCI-000166']
   tag nist: ['AU-10']
 end

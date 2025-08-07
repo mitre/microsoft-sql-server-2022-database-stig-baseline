@@ -30,6 +30,11 @@ Use GRANT, REVOKE, DENY, ALTER ROLE … ADD MEMBER … and/or ALTER ROLE …. DR
   tag gtitle: 'SRG-APP-000033-DB-000084'
   tag fix_id: 'F-75069r1107972_fix'
   tag 'documentable'
+  tag legacy: ['SV-81847', 'V-67357', 'SV-93771', 'V-79065']
   tag cci: ['CCI-000213']
   tag nist: ['AC-3']
+
+  describe 'Test has no automation procedure, checks must be performed manually' do
+    skip 'This check must be performed manually'
+  end
 end

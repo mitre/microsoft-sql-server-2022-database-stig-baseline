@@ -60,6 +60,7 @@ REVOKE [Permission] ON <Securable> FROM <Principal>'
   tag gtitle: 'SRG-APP-000328-DB-000301'
   tag fix_id: 'F-75136r1109205_fix'
   tag 'documentable'
+  tag legacy: ['SV-93811', 'V-79105']
   tag cci: ['CCI-002165']
   tag nist: ['AC-3 (4)']
 end

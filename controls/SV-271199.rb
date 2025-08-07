@@ -74,6 +74,7 @@ SET ENCRYPTION ON;"
   tag gtitle: 'SRG-APP-000416-DB-000380'
   tag fix_id: 'F-75149r1108212_fix'
   tag 'documentable'
+  tag legacy: ['SV-93819', 'V-79113']
   tag cci: ['CCI-002450']
   tag nist: ['SC-13 b']
 end

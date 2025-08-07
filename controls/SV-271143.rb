@@ -27,6 +27,7 @@ ALTER AUTHORIZATION ON SCHEMA::[<Schema Name>] TO [<Principal Name>]'
   tag gtitle: 'SRG-APP-000133-DB-000179'
   tag fix_id: 'F-75093r1108044_fix'
   tag 'documentable'
+  tag legacy: ['SV-93783', 'V-79077']
   tag cci: ['CCI-001499']
   tag nist: ['CM-5 (6)']
 end

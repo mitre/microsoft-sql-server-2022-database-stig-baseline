@@ -59,6 +59,11 @@ Test the restoration of the database at least once a year; correct any issues th
   tag gtitle: 'SRG-APP-000226-DB-000147'
   tag fix_id: 'F-75118r1109217_fix'
   tag 'documentable'
+  tag legacy: ['SV-93789', 'V-79083']
   tag cci: ['CCI-001665']
   tag nist: ['SC-24']
+
+  describe 'Test has no automation procedure, checks must be performed manually' do
+    skip 'This check must be performed manually'
+  end
 end

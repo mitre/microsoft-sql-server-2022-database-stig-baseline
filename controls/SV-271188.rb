@@ -87,6 +87,7 @@ If any procedures or functions are returned that are not documented, this is a f
   tag gtitle: 'SRG-APP-000342-DB-000302'
   tag fix_id: 'F-75138r1108179_fix'
   tag 'documentable'
+  tag legacy: ['SV-93813', 'V-79107']
   tag cci: ['CCI-002233']
   tag nist: ['AC-6 (8)']
 end

@@ -58,6 +58,7 @@ https://docs.microsoft.com/sql/t-sql/statements/alter-table-transact-sql?view=sq
   tag gtitle: 'SRG-APP-000080-DB-000063'
   tag fix_id: 'F-75071r1109176_fix'
   tag 'documentable'
+  tag legacy: ['SV-93775', 'V-79069']
   tag cci: ['CCI-000166']
   tag nist: ['AU-10']
 end

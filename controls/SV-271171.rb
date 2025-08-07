@@ -24,6 +24,7 @@ As this requires a password, ensure it is not exposed to unauthorized persons or
   tag gtitle: 'SRG-APP-000231-DB-000154'
   tag fix_id: 'F-75121r1109191_fix'
   tag 'documentable'
+  tag legacy: ['SV-93795', 'V-79089']
   tag cci: ['CCI-001199']
   tag nist: ['SC-28']
 end

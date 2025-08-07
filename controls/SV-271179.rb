@@ -29,6 +29,28 @@ Consider enabling trace flag 3625 to mask certain system-level error information
   tag gtitle: 'SRG-APP-000266-DB-000162'
   tag fix_id: 'F-75129r1108920_fix'
   tag 'documentable'
+  tag legacy: ['SV-81887', 'V-67397', 'SV-93803', 'V-79097']
   tag cci: ['CCI-001312']
   tag nist: ['SI-11 a']
+
+  # The below query was taken from 2016 MSSQL STIG
+
+  query = %{
+    DBCC
+      TRACESTATUS (3625, -1)
+    GO
+    }
+
+  sql_session = mssql_session(user: input('user'),
+                              password: input('password'),
+                              host: input('host'),
+                              instance: input('instance'),
+                              port: input('port'),
+                              db_name: input('db_name'))
+
+  describe 'TRACEFLAG 3625' do
+    subject { sql_session.query(query).rows[0] }
+    its('status') { should cmp 1 }
+    its('global') { should cmp 1 }
+  end
 end

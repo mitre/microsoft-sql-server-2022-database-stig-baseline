@@ -10,9 +10,7 @@ DBMS functionality and the nature and requirements of databases will vary; so, w
 
 The DBMS must enforce software installation by users based on what types of software installations are permitted (e.g., updates and security patches to existing software) and what types of installations are prohibited (e.g., software whose pedigree regarding being potentially malicious is unknown or suspect) by the organization. 
 
-In the case of a database management system, this requirement covers stored procedures, functions, triggers, views, etc.
-
-'
+In the case of a database management system, this requirement covers stored procedures, functions, triggers, views, etc.'
   desc 'check', "If the SQL Server instance supports only software development, experimentation, and/or developer-level testing (i.e., excluding production systems, integration testing, stress testing, and user acceptance testing), this is not a finding. 
 
 Obtain a listing of users and roles who are authorized to create, alter, or replace logic modules from the server documentation.
@@ -55,8 +53,8 @@ REVOKE ALTER ON [<Object Name>] FROM [<Principal Name>]'
   tag stig_id: 'SQLD-22-001400'
   tag gtitle: 'SRG-APP-000133-DB-000362'
   tag fix_id: 'F-75097r1109185_fix'
-  tag satisfies: ['SRG-APP-000133-DB-000362', 'SRG-APP-000133-DB-000179', 'SRG-APP-000378-DB-000365']
   tag 'documentable'
+  tag legacy: ['SV-93787', 'V-79081']
   tag cci: ['CCI-001499', 'CCI-003980']
   tag nist: ['CM-5 (6)', 'CM-11 (2)']
 end

@@ -52,6 +52,7 @@ https://learn.microsoft.com/en-us/sql/t-sql/statements/alter-authorization-trans
   tag gtitle: 'SRG-APP-000380-DB-000360'
   tag fix_id: 'F-75145r1109207_fix'
   tag 'documentable'
+  tag legacy: ['SV-93817', 'V-79111']
   tag cci: ['CCI-001813']
   tag nist: ['CM-5 (1) (a)']
 end

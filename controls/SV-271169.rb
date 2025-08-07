@@ -50,6 +50,26 @@ https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/c
   tag gtitle: 'SRG-APP-000231-DB-000154'
   tag fix_id: 'F-75119r1109187_fix'
   tag 'documentable'
+  tag legacy: ['SV-93791', 'V-79085']
   tag cci: ['CCI-001199']
   tag nist: ['SC-28']
+
+  query = %{
+    SELECT
+          COUNT(credential_id) AS count_of_ids
+    FROM
+          [master].sys.master_key_passwords
+  }
+
+  sql_session = mssql_session(user: input('user'),
+                              password: input('password'),
+                              host: input('host'),
+                              instance: input('instance'),
+                              port: input('port'),
+                              db_name: input('db_name'))
+
+  describe 'Count of `Database Master Key passwords` stored in credentials within the database' do
+    subject { sql_session.query(query).row(0).column('count_of_ids') }
+    its('value') { should cmp 0 }
+  end  
 end
