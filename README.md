@@ -1,0 +1,1 @@
+# microsoft-sql-server-2022-database-stig-baseline
