@@ -11,8 +11,7 @@ description: null
 version: 1.1.0
 supports: []
 depends: []
-inspec_version: |
-  "~>6.0"
+inspec_version: "~>6.0"
 
 
 ### INPUTS ###
